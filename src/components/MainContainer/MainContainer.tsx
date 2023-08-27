@@ -10,10 +10,10 @@ interface MainContainerProps {}
 const MainContainer: React.FC<MainContainerProps> = () => {
   const [ipData, setIpData] = useState<IIpData | null>(null);
   return (
-    <div className={styles.mainContainer}>
+    <main className={styles.mainContainer}>
       <InputContainer ipData={ipData} setIpData={setIpData} />
       <MapContainer ipData={ipData} />
-    </div>
+    </main>
   );
 };
 

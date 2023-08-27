@@ -41,6 +41,13 @@
   border-bottom-right-radius: 15px;
   border: none;
   background: var(--color-black) url("../../images/icon-arrow.svg") no-repeat center;
+  &:disabled {
+    background-color: var(--color-gray);
+    cursor: auto;
+    &:hover {
+      background-color: var(--color-gray);
+    }
+  }
 }
 .error {
   height: 20px;

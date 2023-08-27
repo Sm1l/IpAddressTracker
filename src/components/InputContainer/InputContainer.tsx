@@ -57,7 +57,7 @@ const InputContainer: React.FC<InputContainerProps> = ({ ipData, setIpData }) =>
             pattern: { value: /^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$/, message: "Enter correct IP address" },
           })}
         />
-        <button type="submit" className={styles.button} disabled={!isValid}></button>
+        <button type="submit" className={styles.button} disabled={!isValid} />
       </form>
       <div className={styles.error}>{errors?.ip && <p>{errors?.ip?.message || "error"}</p>}</div>
       <InfoContainer data={ipData} />
