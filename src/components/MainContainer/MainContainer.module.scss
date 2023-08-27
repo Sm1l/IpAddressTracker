@@ -1,0 +1,8 @@
+.mainContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 2fr;
+  grid-template-rows: minmax(100px, auto) minmax(300px, 1fr);
+}
