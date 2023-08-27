@@ -49,7 +49,7 @@ const InputContainer: React.FC<InputContainerProps> = ({ ipData, setIpData }) =>
         <input
           className={errors?.ip ? `${styles.ipInput} ${styles.inputError}` : `${styles.ipInput}`}
           autoComplete="off"
-          placeholder="Search for any IP address or domain"
+          placeholder="Search for any IP address"
           type="text"
           id="ip"
           {...register("ip", {
