@@ -50,7 +50,7 @@ const InputContainer: React.FC<InputContainerProps> = ({ ipData, setIpData }) =>
           className={errors?.ip ? `${styles.ipInput} ${styles.inputError}` : `${styles.ipInput}`}
           autoComplete="off"
           placeholder="Search for any IP address"
-          type="text"
+          type="number"
           id="ip"
           {...register("ip", {
             required: "The field should not be empty",
